@@ -14,13 +14,11 @@ void initRMQ(int n,int b[]){
     dp[i][j] = max(dp[i][j-1],dp[i+(1<<(j-1))][j-1]);
 }
 //查询最大值
-int rmq(int x,int y){
-    int k = mm[y-x+1];
-    return max(dp[x][k],dp[y-(1<<k)+1][k]);
-}
+
 int main()
 {
     int n;
+    int a;
     scanf("%d",&n);
     cout << "Hello world!" << endl;
     return 0;
